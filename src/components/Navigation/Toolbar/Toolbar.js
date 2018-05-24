@@ -8,11 +8,11 @@ const toolbar = () => {
   return (
     <header className={classes.Toolbar}>
       <div> MENU </div>
-      <div className={classes.Logo}>
+      <div className={[classes.Logo, classes.DesktopOnly].join(' ')}>
         <Logo />
       </div>
 
-      <nav>
+      <nav  className={classes.DesktopOnly}>
           <NavigationItems/>
       </nav>
     </header>
